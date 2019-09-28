@@ -25,17 +25,19 @@ export default function MenuBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ backgroundColor: '#60c4b6' }}>
         <Toolbar>
           <Typography variant="h5" className={classes.title}>
             <Link href="/" color="inherit" underline="none">Home</Link>
           </Typography>
-          |
+          <Typography variant="h3" className={classes.title}>
+            <Link href="/" color="inherit" underline="none" fontWeight="fontWeightBold">re:GROW</Link>
+          </Typography>
           <Typography variant="h5" className={classes.title}>
             <Link href="/another-view" color="inherit" underline="none">Chat Rooms</Link>
           </Typography>
         </Toolbar>
       </AppBar>
-    </div>
+    </div >
   );
 }

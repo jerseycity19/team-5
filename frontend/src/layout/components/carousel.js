@@ -4,7 +4,7 @@ class Carousel extends React.Component {
     render() {
         return (
             <div>
-                <h1>User Story</h1>
+                <h1>Here are their stories.</h1>
             </div>
         )
     }

@@ -6,16 +6,22 @@ import JakeMap from './components/JakeMap'
 
 class StoryFormView extends React.Component {
 
-  render () {
+  render() {
     return (
-      <div>
-        <SimpleMenu/>
-        <JakeMap/>
-        <Carousel class="carousel"/>
-        <ChatForm/>
-      </div>
+      <span>
+        <SimpleMenu />
+        <div style={{ marginTop: '50px', fontSize: '1.5em' }}>We will unite our community to combat addiction. Each pin represents an
+          individual who is fighting against addiction.
+        </div>
+        <div className="rip">
+          <JakeMap />
+        </div>
+
+        <Carousel class="carousel" />
+        <ChatForm />
+      </span>
     )
   }
 }
 
-export default StoryFormView
+export default StoryFormView;

@@ -34,3 +34,25 @@
 .yeet > p {
 
 }
+
+.colored {
+  background-color: #60c4b6
+}
+
+.rip {
+  margin-top: 50px;
+  height: 700px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.rip #content {
+  height: 100%;
+  width: 100%;
+}
+
+.kmap {
+  /* margin-left: 50px; */
+}

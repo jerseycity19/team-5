@@ -32,10 +32,10 @@ export class MapContainer extends React.Component {
           lat: 39.0997,
           lng: -94.5786,
         }}
-        className="map"
+        className="map kmap"
         google={this.props.google}
-        style={{ height: '100%', width: '100%' }}
-        zoom={4}
+        style={{ height: '80%', width: '80%', border: '1px' }}
+        zoom={14}
       >
 
         {this.state.stories
@@ -47,7 +47,7 @@ export class MapContainer extends React.Component {
               position={{
                 lat: story.latitude,
                 lng: story.longitude,
-              }}/>
+              }} />
           ))}
       </Map>
     </>
