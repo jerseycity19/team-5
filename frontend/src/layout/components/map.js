@@ -3,7 +3,7 @@ import google from 'google-map-react';
 
 /* eslint-disable no-unused-vars */
 
-export default function initMap() {
+function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 10,
       center: {lat: -33.9, lng: 151.2}
@@ -58,4 +58,4 @@ export default function initMap() {
       });
     }
   }
-  export default initMap;
+export default initMap;
