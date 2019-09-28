@@ -5,9 +5,8 @@ var storySchema = new Schema({
     user: {
         type: mongoose.Schema.ObjectId,
         ref: "User",
-        required: true
     },
-    time: {
+    date: {
         type: Date,
         required: true,
     },

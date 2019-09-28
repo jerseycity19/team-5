@@ -5,6 +5,9 @@ const logger = require("morgan")
 const app = express();
 const path = require("path")
 
+// Import Routes
+const stories = require("./routes/story")
+
 // These are the required information to open up the database
 const REQUIRED_ENVS = ["MONGODB_URI", "SECRET"];
 
@@ -23,6 +26,9 @@ app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
+
+// Pass through routes
+app.use("/", stories)
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
