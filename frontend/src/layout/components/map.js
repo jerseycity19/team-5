@@ -1,4 +1,7 @@
-import React from 'react';
+/* global google */
+import google from 'google-map-react';
+
+/* eslint-disable no-unused-vars */
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -55,3 +58,4 @@ function initMap() {
       });
     }
   }
+export default initMap;

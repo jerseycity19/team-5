@@ -5,7 +5,7 @@ const storyRouter = require('./storyRouter')
 
 const router = Router()
 
-router.use(twilioWebhookRouter)
-router.use(storyRouter)
+router.use('twilio-webhook', twilioWebhookRouter)
+router.use('/story', storyRouter)
 
 module.exports = router
