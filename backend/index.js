@@ -29,10 +29,15 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Pass through routes
 app.use("/", stories)
+const dotenv = require('dotenv')
+const router = require('./routes')
+dotenv.config()
 
-const port = process.env.PORT || 5000;
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+const app = express()
+const port = process.env.PORT
 
-app.get("/", (req, res) => {
-    return res.send({ "success": true });
-})
+app.use(bodyParser.urlencoded({ extended: false }))
+
+app.use(router)
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
