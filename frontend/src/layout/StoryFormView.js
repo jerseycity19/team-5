@@ -8,12 +8,18 @@ class StoryFormView extends React.Component {
 
   render() {
     return (
-      <div>
+      <span>
         <SimpleMenu />
-        <JakeMap />
+        <div style={{ marginTop: '50px', fontSize: '1.5em' }}>We will unite our community to combat addiction. Each pin represents an
+          individual who is fighting against addiction.
+        </div>
+        <div className="rip">
+          <JakeMap />
+        </div>
+
         <Carousel class="carousel" />
         <ChatForm />
-      </div>
+      </span>
     )
   }
 }
