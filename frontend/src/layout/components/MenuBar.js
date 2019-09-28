@@ -32,7 +32,7 @@ export default function MenuBar() {
           </Typography>
           |
           <Typography variant="h5" className={classes.title}>
-            <Link href="/another-view" color="inherit" underline="none">Chat Room</Link>
+            <Link href="/another-view" color="inherit" underline="none">Chat Rooms</Link>
           </Typography>
         </Toolbar>
       </AppBar>
