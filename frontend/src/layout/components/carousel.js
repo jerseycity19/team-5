@@ -5,7 +5,6 @@ class Carousel extends React.Component {
         return (
             <div>
                 <h1>User Story</h1>
-                <hr/>
             </div>
         )
     }
