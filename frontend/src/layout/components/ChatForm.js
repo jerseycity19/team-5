@@ -85,7 +85,7 @@ export default function ChatForm() {
   return (
     <div>
       <hr />
-      {stories && stories.map(x => <li>{x.firstName} {x.lastName}</li>)}
+      {stories && stories.map(x => <li>{x.firstName} {x.lastName} {x.content}</li>)}
       {success && <h3>Form was successfully created</h3>}
       <form className={classes.container} noValidate autoComplete="off">
         <TextField
