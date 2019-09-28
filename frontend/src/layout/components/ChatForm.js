@@ -53,7 +53,7 @@ export default function ChatForm () {
     const responseJSON = await response.json()
     console.log(responseJSON)
     if (responseJSON.success) {
-      setSuccess(true)
+      this.setSuccess(true)
     }
   }
 
