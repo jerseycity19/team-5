@@ -1,51 +1,51 @@
 {
   "stories": [
     {
-      "name": "Kristina",
+      "firstName": "Kristina",
       "lastName": "Doe",
       "story": "My drug use started when I was in high school, with pain pills that I was prescribed. After some time, I developed a high tolerance, and had to take more and more of them at a time to even feel high. I've struggle so much through the years to stay off the opiates. It wasn't until I admitted complete defeat and surrendered my life to my higher power that, I was able to see that I was bound by the disease of addiction. On October 25, 2017 I was able to get into a detox program at Santa Maria Hostel. I currentyly attend 12-step meetings, and attend therapy as well as stay connected with my support team. Today I am 22 months clean and sober and work as a Recovery Coach with the Youth. I get the opportunity to share my lived experience with others daily. WE DO RECOVER!.",
       "city": "Houston",
       "state": "Texas"
     },
     {
-      "name": "Hailey",
+      "firstName": "Hailey",
       "lastName": "Hesch",
-      "story": "Hailey Hesch was just 12 years old when she started using drugs. Now at age 19, she’s recovering from years of heroin abuse at the Serenity Mesa Youth Recovery Center in Albuquerque, New Mexico. Hailey was one of the speakers at the New Mexico Youth Opioid Awareness Summit held this past spring. She hopes that her story will inspire others. \"I finally realized that I am worth so much more than burnt foil and dirty needles,\" she said at the event. \"I am worthy of a beautiful life.\"",
-      "city": "",
+      "content": "Hailey Hesch was just 12 years old when she started using drugs. Now at age 19, she’s recovering from years of heroin abuse at the Serenity Mesa Youth Recovery Center in Albuquerque, New Mexico. Hailey was one of the speakers at the New Mexico Youth Opioid Awareness Summit held this past spring. She hopes that her content will inspire others. \"I finally realized that I am worth so much more than burnt foil and dirty needles,\" she said at the event. \"I am worthy of a beautiful life.\"",
+      "city": "unknown",
       "state": "New Mexico"
     },
     {
-      "name": "Rachel",
-      "lastName": "Thraxton",
-      "story": "Rachel started drinking and smoking marijuana when she was just 14 years old. In the following years, she became addicted to alcohol, pills and heroin. Drugs cost her her home, child, car and job. Now sober, she is the coordinator for the Women’s Recovery Point of Charleston.",
       "city": "Charleston",
+      "content": "Rachel started drinking and smoking marijuana when she was just 14 years old. In the following years, she became addicted to alcohol, pills and heroin. Drugs cost her her home, child, car and job. Now sober, she is the coordinator for the Women’s Recovery Point of Charleston.",
+      "firstName": "Rachel",
+      "lastName": "Thraxton",
       "state": "West Virginia"
     },
     {
-      "name": "Cash",
+      "firstName": "Cash",
       "lastName": "Owen",
-      "story": "Cash Owen, described as intelligent, charming and a great cook by his family, passed away February 2017 after overdosing on heroin laced with the synthetic opioid fentanyl. He was only 22 years old.Cash, a former student from Austin Texas’ Westlake High School, started using marijuana when he was 15 years old before turning to prescription pills. His mother, Jacy Planta, tried several times to get her son professional help.",
-      "city": "dolor",
-      "state": "sit"
+      "content": "Cash Owen, described as intelligent, charming and a great cook by his family, passed away February 2017 after overdosing on heroin laced with the synthetic opioid fentanyl. He was only 22 years old.Cash, a former student from Austin Texas’ Westlake High School, started using marijuana when he was 15 years old before turning to prescription pills. His mother, Jacy Planta, tried several times to get her son professional help.",
+      "city": "unknown",
+      "state": "unknown"
     },
     {
-      "name": "lorem",
+      "firstName": "lorem",
       "lastName": "impsum",
-      "story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "city": "dolor",
       "state": "sit"
     },
     {
-      "name": "loren",
+      "firstName": "loren",
       "lastName": "ipsum",
-      "story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "city": "dolor",
       "state": "sit"
     },
     {
-      "name": "loren",
+      "firstName": "loren",
       "lastName": "impsum",
-      "story": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "city": "dolor",
       "state": "sit"
     }
