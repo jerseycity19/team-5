@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import link from '../../link'
 
 const useStyles = makeStyles(theme => ({
@@ -36,8 +36,29 @@ export default function ChatForm() {
   const [state, setState] = useState("");
   const [success, setSuccess] = useState(false);
 
+  const [stories, setStories] = useState(null);
+
+  useEffect(() => {
+    load();
+  }, []);
+
+  const load = () => {
+    fetch(link, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then(response => response.json()).then(responseJSON => {
+      let dog = responseJSON
+      console.log(dog)
+      setStories(responseJSON)
+    });
+
+
+  }
+
   const handleSubmit = async () => {
-    const response = await fetch(link, {
+    const response = await fetch(link + '/story', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -48,18 +69,23 @@ export default function ChatForm() {
         story,
         city,
         state,
+        content: story,
       }),
     });
     const responseJSON = await response.json();
     console.log(responseJSON);
     if (responseJSON.success) {
       setSuccess(true);
+
+      // This is inefficient but I don't care at this point
+      load()
     }
   };
 
   return (
     <div>
       <hr />
+      {stories && stories.map(x => <li>{x.firstName} {x.lastName}</li>)}
       {success && <h3>Form was successfully created</h3>}
       <form className={classes.container} noValidate autoComplete="off">
         <TextField
