@@ -1,11 +1,11 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import { Grid } from '@material-ui/core';
-import Button from '@material-ui/core/Button';
-import { useState, useEffect } from 'react';
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import TextField from '@material-ui/core/TextField'
+import { Grid } from '@material-ui/core'
+import Button from '@material-ui/core/Button'
+import { useState, useEffect } from 'react'
 import link from '../../link'
-import StoryBox from './StoryBox';
+import StoryBox from './StoryBox'
 
 const useStyles = makeStyles(theme => ({
   textArea: {
@@ -26,44 +26,43 @@ const useStyles = makeStyles(theme => ({
   menu: {
     width: 200,
   },
-}));
+}))
 
-export default function ChatForm() {
-  const classes = useStyles();
+export default function ChatForm () {
+  const classes = useStyles()
 
-  const [firstName, setFirst] = useState("");
-  const [lastName, setLast] = useState("");
-  const [story, setStory] = useState("");
-  const [city, setCity] = useState("");
-  const [state, setState] = useState("");
-  const [success, setSuccess] = useState(false);
+  const [firstName, setFirst] = useState('')
+  const [lastName, setLast] = useState('')
+  const [story, setStory] = useState('')
+  const [city, setCity] = useState('')
+  const [state, setState] = useState('')
+  const [success, setSuccess] = useState(false)
 
-  const [stories, setStories] = useState(null);
+  const [stories, setStories] = useState(null)
 
   useEffect(() => {
-    load();
-  }, []);
+    load()
+  }, [])
 
   const load = () => {
-    fetch(link, {
-      method: "GET",
+    fetch(link + '/story', {
+      method: 'GET',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     }).then(response => response.json()).then(responseJSON => {
       let dog = responseJSON
       console.log(dog)
       setStories(responseJSON)
-    });
-
+    })
 
   }
 
   const handleSubmit = async () => {
     const response = await fetch(link + '/story', {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         firstName,
@@ -73,28 +72,28 @@ export default function ChatForm() {
         state,
         content: story,
       }),
-    });
-    const responseJSON = await response.json();
-    console.log(responseJSON);
+    })
+    const responseJSON = await response.json()
+    console.log(responseJSON)
     if (responseJSON.success) {
-      setSuccess(true);
+      setSuccess(true)
 
       // This is inefficient but I don't care at this point
       load()
     }
-  };
+  }
 
   return (
     <div>
-      <hr />
+      <hr/>
       {stories &&
-        <Grid container style={{ display: 'flex', justifyContent: 'center' }}>
-          {stories.map(x =>
-            <Grid item xs={12} md={6}>
-              <StoryBox story={x} />
-            </Grid>
-          )}
-        </Grid>
+      <Grid container style={{ display: 'flex', justifyContent: 'center' }}>
+        {stories.map(x =>
+          <Grid item xs={12} md={6}>
+            <StoryBox story={x}/>
+          </Grid>,
+        )}
+      </Grid>
       }
       {success && <h3>Form was successfully created</h3>}
       <form className={classes.container} noValidate autoComplete="off">
@@ -141,9 +140,10 @@ export default function ChatForm() {
           margin="normal"
         />
         <br></br>
-        <Button variant="contained" color="primary" style={{ backgroundColor: "#60c4b6" }} onClick={() => handleSubmit(console.log("Help"))}>
+        <Button variant="contained" color="primary" style={{ backgroundColor: '#60c4b6' }}
+                onClick={() => handleSubmit(console.log('Help'))}>
           Submit
-                    </Button>
+        </Button>
       </form>
     </div>
   )
