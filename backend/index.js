@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const logger = require('morgan')
 const dotenv = require('dotenv')
+const cors = require("cors")
 
 // The dotenv module loads all environment variables from the file '.env' to the global object process.env
 //  It's just a little more convenient than settings vars all the time.
@@ -32,6 +33,7 @@ app.use(logger('dev'))
 // Parse incoming http requests for json or urlencodings
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(cors())
 
 // Import the router from the routes folder
 const router = require('./routes')

@@ -8,13 +8,13 @@ router.get('/', (req, res) => {
     if (err) {
       res.status(500).send({ 'success': false, msg: 'Problem accessing database' })
     }
-
+    console.log(stories)
     res.send(stories)
   })
 })
 
 // This writes a story to the database
-router.post('/', (req, res) => {
+router.post('/story', (req, res) => {
   let now = Date()
   let newStory = new Story({
     firstName: req.body.firstName,
