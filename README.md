@@ -23,6 +23,8 @@ The project is intended to benefit the charity ShatterProof by providing technol
 
 ![screenshot](screenshots/chat_list.png)
 
+![screenshot](screenshots/chat.png)
+
 ![screenshot](screenshots/dialogflow.png)
 
 ![screenshot](screenshots/sms.png)
