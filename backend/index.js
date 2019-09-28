@@ -1,43 +1,41 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
-const logger = require("morgan")
-const app = express();
-const path = require("path")
-
-// Import Routes
-const stories = require("./routes/story")
-
-// These are the required information to open up the database
-const REQUIRED_ENVS = ["MONGODB_URI", "SECRET"];
-
-// Checks if the environment varibles are there
-REQUIRED_ENVS.forEach(function (el) {
-    if (!process.env[el]) throw new Error("Missing required env var " + el);
-});
-mongoose.connect(process.env.MONGODB_URI);
-mongoose.connection.on("open", () => console.log(`Connected to MongoDB!`));
-mongoose.connection.on("error", function (err) {
-    console.log("Mongoose default connection error: " + err);
-});
-
-// Just some middle ware :)
-app.use(logger("dev"));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "public")));
-
-// Pass through routes
-app.use("/", stories)
+const express = require('express')
+const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
+const logger = require('morgan')
 const dotenv = require('dotenv')
-const router = require('./routes')
+
+// The dotenv module loads all environment variables from the file '.env' to the global object process.env
+//  It's just a little more convenient than settings vars all the time.
 dotenv.config()
 
-const app = express()
-const port = process.env.PORT
+// These are the required information to open up the database
+const REQUIRED_ENVS = [
+  'MONGODB_URI',
+  'SECRET'
+]
 
+// Verify all environment vaiables are present
+REQUIRED_ENVS.forEach(function (el) {
+  if (!process.env[el]) throw new Error('Missing required env var ' + el)
+})
+mongoose.connect(process.env.MONGODB_URI)
+mongoose.connection.on('open', () => console.log(`Connected to MongoDB!`))
+mongoose.connection.on('error', function (err) {
+  console.log('Mongoose default connection error: ' + err)
+})
+
+const app = express()
+
+// Log data using Morgan
+app.use(logger('dev'))
+
+// Parse incoming http requests for json or urlencodings
+app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
+// Import the router from the routes folder
+const router = require('./routes')
 app.use(router)
 
+// Start the app listening
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
