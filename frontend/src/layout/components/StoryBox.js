@@ -11,13 +11,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function StoryBox(props) {
     const classes = useStyles();
-    // console.log('hey', props.story)
-    // return <div className="yeet">
-    //     <div>
-    //     <img src={require()}/>
-    //     {props.story.firstName} {props.story.lastName}</div>
-    //     <p>{props.story.content}</p>
-    // </div>
     return <Paper className={classes.root}>
         <Typography variant="h5" component="h3">
             {props.story.firstName} {props.story.lastName}

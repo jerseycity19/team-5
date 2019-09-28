@@ -89,7 +89,7 @@ export default function ChatForm() {
       {stories &&
         <Grid container style={{ display: 'flex', justifyContent: 'center' }}>
           {stories.map(x =>
-            <Grid item xs={12} md={6}>
+            <Grid key={x._id} item xs={12} md={6}>
               <StoryBox story={x} />
             </Grid>,
           )}
