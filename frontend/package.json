@@ -5,11 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.4.3",
     "@material-ui/icons": "^4.4.3",
-<<<<<<< HEAD
-    "material-ui": "^0.20.2",
-=======
     "google-map-react": "^1.1.5",
->>>>>>> bcdfc1b6be912e5b3375ff863daafe7fbfec0f95
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "react-map-gl": "^5.0.11",
