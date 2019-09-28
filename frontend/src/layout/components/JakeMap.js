@@ -29,13 +29,13 @@ export class MapContainer extends React.Component {
     <>
       <Map
         initialCenter={{
-          lat: 40.717,
-          lng: -74.043,
+          lat: 39.0997,
+          lng: -94.5786,
         }}
         className="map"
         google={this.props.google}
         style={{ height: '100%', width: '100%' }}
-        zoom={14}
+        zoom={4}
       >
 
         {this.state.stories
