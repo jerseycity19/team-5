@@ -8,3 +8,5 @@ env.sh
 /backend/google_credentials.json
 
 .idea
+.env
+*/.env
