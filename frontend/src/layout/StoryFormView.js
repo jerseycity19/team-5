@@ -2,7 +2,7 @@ import React from 'react'
 import Carousel from './components/carousel'
 import SimpleMenu from './components/MenuBar'
 import ChatForm from './components/ChatForm'
-import InitMap from './components/map'
+import Map from './components/ReactMap'
 
 class StoryFormView extends React.Component {
 
@@ -10,7 +10,7 @@ class StoryFormView extends React.Component {
     return (
       <div>
         <SimpleMenu/>
-        <initMap/>
+        <Map/>
         <Carousel class="carousel"/>
         <ChatForm/>
       </div>
