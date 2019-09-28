@@ -1,0 +1,56 @@
+{
+  "id": "b2b494f5-b715-4cd4-816d-e29468aea55f",
+  "name": "Find Symptons",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "Problem-Emergencyyes-followup",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "11799f9f-2790-43fb-9d8d-22dd6a9b2b60",
+          "required": true,
+          "dataType": "@symptoms",
+          "name": "symptoms",
+          "value": "$symptoms",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please tell me some symptoms."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Remain calm, and contact local emergency services using 911."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "3da10a55-9ae3-4c91-9b5e-5e3fd81f38f4",
+  "parentId": "4a5ee1de-41c5-40fe-a757-205bb9dc7b37",
+  "rootParentId": "4a5ee1de-41c5-40fe-a757-205bb9dc7b37",
+  "name": "Overdose? - Symptoms description",
+  "auto": true,
+  "contexts": [
+    "Overdose-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Overdose.Overdose-custom",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

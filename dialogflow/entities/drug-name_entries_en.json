@@ -1,0 +1,78 @@
+[
+  {
+    "value": "Opioids",
+    "synonyms": [
+      "oxycontin",
+      "Oxycodone",
+      "Vicodin",
+      "heroin",
+      "fentanyl",
+      "morphine"
+    ]
+  },
+  {
+    "value": "Alcohol",
+    "synonyms": [
+      "Alcohol",
+      "Beer",
+      "Wine",
+      "Vodka",
+      "Tequilla"
+    ]
+  },
+  {
+    "value": "Benzodiazepines",
+    "synonyms": [
+      "Benzodiazepines",
+      "alprazolam",
+      "Xanax",
+      "clonazepam",
+      "Clonipin",
+      "diazepam",
+      "Valium"
+    ]
+  },
+  {
+    "value": "Amphetamines",
+    "synonyms": [
+      "Amphetamines",
+      "Cocaine",
+      "coke",
+      "blow",
+      "snow",
+      "rock",
+      "crack",
+      "Adderall",
+      "methamphetamine",
+      "meth",
+      "crystal"
+    ]
+  },
+  {
+    "value": "Hallucinogens",
+    "synonyms": [
+      "Hallucinogens",
+      "LSD",
+      "MDMA",
+      "ecstasy",
+      "molly",
+      "angel dust",
+      "PCP",
+      "Ketamine",
+      "Special K",
+      "psilocybin mushrooms",
+      "peyote"
+    ]
+  },
+  {
+    "value": "Marijuana",
+    "synonyms": [
+      "Marijuana",
+      "Weed",
+      "Mary Jane",
+      "Kush",
+      "Hash",
+      "Pot"
+    ]
+  }
+]

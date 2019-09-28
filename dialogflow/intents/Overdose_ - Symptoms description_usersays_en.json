@@ -1,0 +1,38 @@
+[
+  {
+    "id": "cc1f9797-beb2-4880-ad96-9157772d35e9",
+    "data": [
+      {
+        "text": "Can you describe the symptoms?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3188d91c-8d06-40a8-b524-2015c0c8e503",
+    "data": [
+      {
+        "text": "I need you to describe the situation",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "48860fb1-827b-41c4-87ea-8b3d71cb10b4",
+    "data": [
+      {
+        "text": "Can you tell me whats happening?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

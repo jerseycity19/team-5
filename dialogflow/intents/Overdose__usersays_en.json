@@ -1,0 +1,74 @@
+[
+  {
+    "id": "5148b93a-2193-4a84-9aa6-88277f8cf673",
+    "data": [
+      {
+        "text": "We think our friend may have overdosed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8fd891f2-b159-4a17-8103-ba29d789ca23",
+    "data": [
+      {
+        "text": "I think my friend may have overdosed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e37f6e25-45e0-4ee4-b82e-93bace800b6a",
+    "data": [
+      {
+        "text": "I think my friend overdosed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ddb7e58a-4307-4245-972a-e5f64a9e1f4c",
+    "data": [
+      {
+        "text": "my friend overdosed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d11f03c8-e2b0-4170-8961-5fdd2b03b41f",
+    "data": [
+      {
+        "text": "overdosed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4d14acd8-aa99-4cd2-9870-931483c7f7b9",
+    "data": [
+      {
+        "text": "overdose",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

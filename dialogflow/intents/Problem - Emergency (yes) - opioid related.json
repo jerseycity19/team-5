@@ -1,0 +1,37 @@
+{
+  "id": "65424d3e-910b-4cde-bb2b-4e7b57c861b4",
+  "parentId": "a92b0611-3ab5-44df-92e5-7b770abdad7b",
+  "rootParentId": "4e4c499a-238d-4a64-b8fa-99f90cc7d84a",
+  "name": "Problem - Emergency (yes) - opioid related",
+  "auto": true,
+  "contexts": [
+    "Problem-yes-followup",
+    "Problem-Emergencyyes-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Problem.Problem-yes.Problem-Emergencyyes-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "- Administer naloxone, if available.\n- Try to keep the person awake and breathing.\n- Lay the person on their side to prevent choking.\n- Stay with him or her until emergency workers arrive."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

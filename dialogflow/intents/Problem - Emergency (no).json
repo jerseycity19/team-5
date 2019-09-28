@@ -1,0 +1,39 @@
+{
+  "id": "12fbf423-9b12-4336-b834-c7bc79003eea",
+  "parentId": "4e4c499a-238d-4a64-b8fa-99f90cc7d84a",
+  "rootParentId": "4e4c499a-238d-4a64-b8fa-99f90cc7d84a",
+  "name": "Problem - Emergency (no)",
+  "auto": true,
+  "contexts": [
+    "Problem-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Problem.Problem-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Great! How can I help you?",
+            "How may I assist you?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

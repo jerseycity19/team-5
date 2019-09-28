@@ -1,0 +1,56 @@
+[
+  {
+    "id": "700e0c7a-b72b-402a-ae85-cecf01e1c4a1",
+    "data": [
+      {
+        "text": "My friend ",
+        "userDefined": false
+      },
+      {
+        "text": "isn\u0027t breathing",
+        "alias": "symptoms",
+        "meta": "@symptoms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7f33c722-0a0d-455b-8284-b08ae16220f3",
+    "data": [
+      {
+        "text": "I am ",
+        "userDefined": false
+      },
+      {
+        "text": "unable to breathe",
+        "alias": "symptoms",
+        "meta": "@symptoms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d82799dd-726a-4562-a8ba-9b97f97a28d8",
+    "data": [
+      {
+        "text": "I ",
+        "userDefined": false
+      },
+      {
+        "text": "can\u0027t breathe",
+        "alias": "symptoms",
+        "meta": "@symptoms",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

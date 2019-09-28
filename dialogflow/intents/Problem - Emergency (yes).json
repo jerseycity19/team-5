@@ -1,0 +1,78 @@
+{
+  "id": "a92b0611-3ab5-44df-92e5-7b770abdad7b",
+  "parentId": "4e4c499a-238d-4a64-b8fa-99f90cc7d84a",
+  "rootParentId": "4e4c499a-238d-4a64-b8fa-99f90cc7d84a",
+  "name": "Problem - Emergency (yes)",
+  "auto": true,
+  "contexts": [
+    "Problem-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Problem.Problem-yes",
+      "affectedContexts": [
+        {
+          "name": "Problem-yes-followup",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "Problem-Emergencyyes-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "a8354cb4-790c-47d2-b6f7-963853af30a8",
+          "required": false,
+          "dataType": "@symptoms",
+          "name": "symptoms",
+          "value": "$symptoms",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "defaultValue": "Their body goes limp\nTheir fingernails or lips have a purple or blue color\nThey start vomiting or making gurgling noises\nThey cannot be awakened or are unable to speak\nTheir breathing or heartbeat slows or stops",
+          "isList": true
+        },
+        {
+          "id": "378c406d-163f-4771-9b24-911c2d836513",
+          "required": false,
+          "dataType": "",
+          "name": "opioid_related",
+          "value": "$opioid_related",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "defaultValue": "Is this an opioid related overdose?",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Stay calm, I will help you.\nPlease call 911 first.\n\n$opioid_related",
+            "Everything is going to be fine.  Call 911 in the meantime.\n\n$opioid_related",
+            "I need you to stay calm. Please call 911.\n\n$opioid_related"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

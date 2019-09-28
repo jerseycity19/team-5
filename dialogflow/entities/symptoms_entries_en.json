@@ -1,0 +1,26 @@
+[
+  {
+    "value": "loss of breath",
+    "synonyms": [
+      "loss of breathe",
+      "can\u0027t breathe",
+      "unable to breathe",
+      "hard to breathe",
+      "isn\u0027t breathing"
+    ]
+  },
+  {
+    "value": "Unresponsiveness",
+    "synonyms": [
+      "Unresponsiveness",
+      "not reacting",
+      "not moving"
+    ]
+  },
+  {
+    "value": "slow heartbeat",
+    "synonyms": [
+      "slow heartbeat"
+    ]
+  }
+]

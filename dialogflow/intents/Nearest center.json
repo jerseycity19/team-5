@@ -1,0 +1,60 @@
+{
+  "id": "795545ea-2647-4967-ae6d-f4277634b2ba",
+  "name": "Nearest center",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "41b34c04-09d5-40db-86af-29a3879b4e05",
+          "required": true,
+          "dataType": "@sys.location",
+          "name": "location",
+          "value": "$location",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "f21a7023-1710-4633-b0ba-fa2b46dd4e9d",
+          "required": true,
+          "dataType": "@help-centers",
+          "name": "help-center",
+          "value": "$help-center",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "defaultValue": "help center",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "The nearest reputable center is Parallax Center Ambulatory Detox and Continuing Care at 145 E 32nd St 6th Floor, New York, NY 10016",
+            "Sure! There closest center to you is 43 minutes via the PATH train at Parallax Center Ambulatory Detox and Continuing Care. The address is 145 E 32nd St 6th Floor, New York, NY 10016"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

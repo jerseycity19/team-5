@@ -1,0 +1,37 @@
+{
+  "id": "4a5ee1de-41c5-40fe-a757-205bb9dc7b37",
+  "name": "Overdose?",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "Overdose-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Keep calm, and call 911 if in doubt. It is important to approach emergency situations with a cool head. [Imagine practical medically-vetted first-aid advice here] Here are the signs of an overdose:\n\nshallow breathing, weak pulse, clammy skin, coma, death from respiratory arrest"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

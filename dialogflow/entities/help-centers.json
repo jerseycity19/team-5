@@ -1,0 +1,9 @@
+{
+  "id": "e3f43c7f-aab9-4ef1-9e3d-1f2dc5b1a583",
+  "name": "help-centers",
+  "isOverridable": true,
+  "isEnum": true,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}
