@@ -56,3 +56,11 @@
 .kmap {
   /* margin-left: 50px; */
 }
+
+.chatbox {
+  border: 1.5px solid #9bdad1;
+  border-radius: 10px;
+  min-height: 500px;
+  max-width: 80%;
+  margin: 20px auto;
+}
