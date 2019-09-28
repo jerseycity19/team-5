@@ -1,13 +1,13 @@
-import React from 'react';
-import './App.css';
-import DesktopView from './layout/DesktopView';
+import React from 'react'
+import './App.css'
+import SwitchView from './layout/SwitchView'
 
-function App() {
+function App () {
   return (
     <div className="App">
-      <DesktopView></DesktopView>
+      <SwitchView/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
