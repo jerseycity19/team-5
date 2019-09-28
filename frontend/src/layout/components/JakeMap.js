@@ -29,8 +29,8 @@ export class MapContainer extends React.Component {
     <>
       <Map
         initialCenter={{
-          lat: 40.717,
-          lng: -74.043,
+          lat: 39.0997,
+          lng: -94.5786,
         }}
         className="map kmap"
         google={this.props.google}
