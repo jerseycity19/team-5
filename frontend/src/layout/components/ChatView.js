@@ -11,11 +11,13 @@ import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
 import Icon from '@material-ui/core/Icon';
 import SaveIcon from '@material-ui/icons/Save';
+import { flexbox } from '@material-ui/system'
 
 export default class ChatView extends Component {
   state = {
     messages: [],
     inProgressMessage: '',
+    id: Math.floor(Math.random() * 10000)
   }
 
   constructor(props) {
@@ -32,7 +34,7 @@ export default class ChatView extends Component {
   }
 
   sendMessage = (message) => {
-    this.socket.emit('chat message', message)
+    this.socket.emit('chat message', { message, senderId: this.state.id })
   }
 
   onFormSubmit = (e) => {
@@ -50,11 +52,10 @@ export default class ChatView extends Component {
       <SimpleMenu />
 
       <div className="chatbox">
-        <ul>
-          {this.state.messages.map(message => (
-            <li key={message}>{message}</li>
-          ))}
-        </ul>
+        Your Unique Id: {this.state.id}
+        {this.state.messages.map(message => (
+          (message.senderId !== this.state.id) ? <div className="left-boy">{message.senderId}: {message.message}</div> : <div className="right-boy">{message.message}</div>
+        ))}
       </div>
 
       <form onSubmit={this.onFormSubmit}>

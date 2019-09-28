@@ -64,3 +64,15 @@
   max-width: 80%;
   margin: 20px auto;
 }
+
+.left-boy {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5px
+}
+
+.right-boy {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px
+}
