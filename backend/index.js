@@ -11,8 +11,13 @@ dotenv.config()
 
 // These are the required information to open up the database
 const REQUIRED_ENVS = [
+<<<<<<< HEAD
     'MONGODB_URI',
     'SECRET'
+=======
+  'MONGODB_URI',
+  'PORT',
+>>>>>>> 765fdfb37eddb2f321d09f8e06c922de88984d14
 ]
 
 // Verify all environment vaiables are present
@@ -38,6 +43,8 @@ app.use(cors())
 // Import the router from the routes folder
 const router = require('./routes')
 app.use(router)
+
+const port = process.env.PORT
 
 // Start the app listening
 let port = process.env.port || 5000;
