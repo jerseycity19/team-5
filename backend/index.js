@@ -1,21 +1,15 @@
-const express = require("express");
-const app = express();
+const bodyParser = require('body-parser')
+const express = require('express')
+const dotenv = require('dotenv')
+const router = require('./routes')
 
-const bodyParser = require("body-parser")
+dotenv.config()
 
-const port = process.env.PORT || 5000;
+const app = express()
+const port = process.env.PORT
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.get("/", (req, res) => {
-    console.log(req.body)
-    return res.send({ "success": true });
-})
+app.use(router)
 
-
-app.post("/twilio-webhook", (req, res) => {
-    console.log(req.body)
-    return res.send({ "success": true });
-})
-
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
