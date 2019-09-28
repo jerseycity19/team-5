@@ -29,6 +29,14 @@ var storySchema = new Schema({
     required: true,
     default: 0,
   },
+  latitude: {
+    type: Number,
+    required: false
+  },
+  longitude: {
+    type: Number,
+    required: false
+  }
 })
 
 const Story = mongoose.model('Story', storySchema)
