@@ -9,16 +9,10 @@ class DesktopView extends React.Component {
     render() {
         return (
             <div>
-<<<<<<< HEAD
                 <MenuBar />
                 <Carousel class="carousel" />
                 <ChatForm />
-=======
-                <SimpleMenu/>
-                <Carousel class = "carousel"/>
-                <ChatForm/>
-                <ChatRoomList/>
->>>>>>> 765fdfb37eddb2f321d09f8e06c922de88984d14
+                <ChatRoomList />
             </div>
         )
     }

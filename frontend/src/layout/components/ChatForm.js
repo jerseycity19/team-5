@@ -1,9 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import { Grid } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import { useState, useEffect } from 'react';
 import link from '../../link'
+import StoryBox from './StoryBox';
 
 const useStyles = makeStyles(theme => ({
   textArea: {
@@ -85,7 +87,15 @@ export default function ChatForm() {
   return (
     <div>
       <hr />
-      {stories && stories.map(x => <li>{x.firstName} {x.lastName} {x.content}</li>)}
+      {stories &&
+        <Grid container style={{ display: 'flex', justifyContent: 'center' }}>
+          {stories.map(x =>
+            <Grid item xs={12} md={6}>
+              <StoryBox story={x} />
+            </Grid>
+          )}
+        </Grid>
+      }
       {success && <h3>Form was successfully created</h3>}
       <form className={classes.container} noValidate autoComplete="off">
         <TextField
