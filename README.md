@@ -12,3 +12,13 @@ We developed an application that intends to meet all of these features. It provi
 This repository contains the frontend/backend code for the team-5 project for the Fall 2019 Code for Good hackathon.
 
 The project is intended to benefit the charity ShatterProof by providing technology that helps to accomplish their mission. 
+
+Screenshots
+
+![screenshot](screenshots/home_1.png)
+
+![screenshot](screenshots/home_2.png)
+
+![screenshot](screenshots/home_3.png)
+
+![screenshot](screenshots/chat_list.png)
