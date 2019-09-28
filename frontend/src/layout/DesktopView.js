@@ -1,9 +1,16 @@
 import React from 'react';
+import Carousel from './components/carousel'
+import SimpleMenu from './components/MenuBar'
 
-function App() {
-  return (
-    <p>Welcome to the Desktop Layout!</p>
-  );
+class DesktopView extends React.Component {
+    render() {
+        return (
+            <div>
+                <SimpleMenu/>
+                <Carousel/>
+            </div>
+        )
+    }
 }
 
-export default App;
+export default DesktopView;
