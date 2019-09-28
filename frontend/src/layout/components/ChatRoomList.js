@@ -29,6 +29,8 @@ export default function ChatRoomList() {
   };
 
   return (
+    <div>
+      <br></br>
     <List
       component="nav"
       aria-labelledby="nested-list-subheader"
@@ -51,5 +53,6 @@ export default function ChatRoomList() {
         </List>
       </Collapse>
     </List>
+    </div>
   )
 }
