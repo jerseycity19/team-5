@@ -26,7 +26,7 @@ export default function MenuBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>   
+        <Toolbar>
           <Typography variant="h5" className={classes.title}>
             <Link href="/" color="inherit" underline="none">Home</Link>
           </Typography>

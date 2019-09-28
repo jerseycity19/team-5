@@ -1,7 +1,7 @@
 const { Router } = require('express')
 
 const twilioWebhookRouter = require('./twilioWebhook')
-const storyRouter = require('./story')
+const storyRouter = require('./storyRouter')
 
 const router = Router()
 

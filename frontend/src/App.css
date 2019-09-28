@@ -20,3 +20,17 @@
 .App-link {
   color: #09d3ac;
 }
+
+.yeet {
+  /* display: flex; */
+  /* justify-content: row; */
+  /* align-content: flex-start;   */
+  max-width: 80%;
+  margin: 2px 2px;
+  border: 1px solid #949494;
+  border-radius: 5px;
+}
+
+.yeet > p {
+
+}
