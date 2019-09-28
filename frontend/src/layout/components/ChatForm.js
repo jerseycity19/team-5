@@ -34,10 +34,10 @@ export default function ChatForm () {
   const [story, setStory] = useState('')
   const [city, setCity] = useState('')
   const [state, setState] = useState('')
-
+  const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = async () => {
-    const response = await fetch(link, {
+    await fetch(link, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -50,54 +50,63 @@ export default function ChatForm () {
         state,
       }),
     })
+
+    setSubmitted(true)
   }
 
   return (
-    <div>
-      <hr/>
-      <form className={classes.container} noValidate autoComplete="off">
-        <TextField
-          id="standard-name"
-          label="First Name"
-          className={classes.textField}
-          onChange={(e) => setFirst(e.target.value)}
-          margin="normal"
-        />
-        <TextField
-          id="standard-name"
-          label="Last Name"
-          className={classes.textField}
-          onChange={(e) => setLast(e.target.value)}
-          margin="normal"
-        />
-        <TextField
-          id="standard-multiline-flexible"
-          label="Story"
-          multiline
-          rows="4"
-          onChange={(e) => setStory(e.target.value)}
-          className={classes.textField}
-          margin="normal"
-        />
-        <TextField
-          id="standard-name"
-          label="City"
-          className={classes.textField}
-          onChange={(e) => setCity(e.target.value)}
-          margin="normal"
-        />
-        <TextField
-          id="standard-name"
-          label="State"
-          className={classes.textField}
-          onChange={(e) => setState(e.target.value)}
-          margin="normal"
-        />
-        <br></br>
-        <Button variant="contained" color="primary" onClick={handleSubmit}>
-          Submit
-        </Button>
-      </form>
-    </div>
+    <>
+      {submitted && (
+        <p>Thank you for your story.</p>
+      )}
+      {!submitted && (
+      <div>
+        <hr/>
+        <form className={classes.container} noValidate autoComplete="off">
+          <TextField
+            id="standard-name"
+            label="First Name"
+            className={classes.textField}
+            onChange={(e) => setFirst(e.target.value)}
+            margin="normal"
+          />
+          <TextField
+            id="standard-name"
+            label="Last Name"
+            className={classes.textField}
+            onChange={(e) => setLast(e.target.value)}
+            margin="normal"
+          />
+          <TextField
+            id="standard-multiline-flexible"
+            label="Story"
+            multiline
+            rows="4"
+            onChange={(e) => setStory(e.target.value)}
+            className={classes.textField}
+            margin="normal"
+          />
+          <TextField
+            id="standard-name"
+            label="City"
+            className={classes.textField}
+            onChange={(e) => setCity(e.target.value)}
+            margin="normal"
+          />
+          <TextField
+            id="standard-name"
+            label="State"
+            className={classes.textField}
+            onChange={(e) => setState(e.target.value)}
+            margin="normal"
+          />
+          <br></br>
+          <Button variant="contained" color="primary" onClick={handleSubmit}>
+            Submit
+          </Button>
+        </form>
+      </div>
+      )}
+    </>
   )
 }
