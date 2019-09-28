@@ -35,7 +35,7 @@ export class MapContainer extends React.Component {
         className="map kmap"
         google={this.props.google}
         style={{ height: '80%', width: '80%', border: '1px' }}
-        zoom={14}
+        zoom={4}
       >
 
         {this.state.stories
