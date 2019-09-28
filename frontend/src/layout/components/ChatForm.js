@@ -50,12 +50,6 @@ export default function ChatForm () {
         state,
       }),
     })
-
-    const responseJSON = await response.json()
-    console.log(responseJSON)
-    if (responseJSON.success) {
-      this.setSuccess(true)
-    }
   }
 
   return (
@@ -100,7 +94,7 @@ export default function ChatForm () {
           margin="normal"
         />
         <br></br>
-        <Button variant="contained" color="primary" onClick={() => handleSubmit(console.log('Help'))}>
+        <Button variant="contained" color="primary" onClick={handleSubmit}>
           Submit
         </Button>
       </form>
