@@ -5,6 +5,7 @@ const geocoder = require('../facades/geocoder')
 
 // This grabs all the stories
 router.get('/', (req, res) => {
+  console.log("Hello");
   Story.find({}, (err, stories) => {
     if (err) {
       res.status(500).send({ 'success': false, msg: 'Problem accessing database' })
