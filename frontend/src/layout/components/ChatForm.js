@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function ChatForm () {
+export default function ChatForm() {
   const classes = useStyles()
 
   const [firstName, setFirst] = useState('')
@@ -85,17 +85,19 @@ export default function ChatForm () {
 
   return (
     <div>
-      <hr/>
+      <hr />
       {stories &&
-      <Grid container style={{ display: 'flex', justifyContent: 'center' }}>
-        {stories.map(x =>
-          <Grid item xs={12} md={6}>
-            <StoryBox story={x}/>
-          </Grid>,
-        )}
-      </Grid>
+        <Grid container style={{ display: 'flex', justifyContent: 'center' }}>
+          {stories.map(x =>
+            <Grid item xs={12} md={6}>
+              <StoryBox story={x} />
+            </Grid>,
+          )}
+        </Grid>
       }
       {success && <h3>Form was successfully created</h3>}
+      <h2>Share Your Story!</h2>
+      <p>Find your voice and use it to empower those around you.</p>
       <form className={classes.container} noValidate autoComplete="off">
         <TextField
           id="standard-name"
@@ -141,7 +143,7 @@ export default function ChatForm () {
         />
         <br></br>
         <Button variant="contained" color="primary" style={{ backgroundColor: '#60c4b6' }}
-                onClick={() => handleSubmit(console.log('Help'))}>
+          onClick={() => handleSubmit(console.log('Help'))}>
           Submit
         </Button>
       </form>
