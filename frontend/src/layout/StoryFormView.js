@@ -6,16 +6,16 @@ import Map from './components/ReactMap'
 
 class StoryFormView extends React.Component {
 
-  render () {
+  render() {
     return (
       <div>
-        <SimpleMenu/>
-        <Map/>
-        <Carousel class="carousel"/>
-        <ChatForm/>
+        <SimpleMenu />
+        <Map />
+        <Carousel class="carousel" />
+        <ChatForm />
       </div>
     )
   }
 }
 
-export default StoryFormView
+export default StoryFormView;
