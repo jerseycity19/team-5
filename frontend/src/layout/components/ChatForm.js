@@ -143,7 +143,7 @@ export default function ChatForm() {
         />
         <br></br>
         <Button variant="contained" color="primary" style={{ backgroundColor: '#60c4b6', marginBottom: '20px' }}
-          onClick={() => handleSubmit(console.log('Help'))}>
+          onClick={() => handleSubmit(console.log('Help, I\'m stuck in the computer!'))}>
           Submit
         </Button>
       </form>

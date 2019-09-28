@@ -4,7 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-import CardMedia from '@material-ui/core/CardMedia'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -33,7 +32,7 @@ export default function MenuBar() {
           </Typography>
           |
           <Typography variant="h5" className={classes.title}>
-            <Link href="/another-view" color="inherit" underline="none">Chat Room</Link>
+            <Link href="/another-view" color="inherit" underline="none">Chat Rooms</Link>
           </Typography>
         </Toolbar>
       </AppBar>
