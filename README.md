@@ -13,7 +13,7 @@ This repository contains the frontend/backend code for the team-5 project for th
 
 The project is intended to benefit the charity ShatterProof by providing technology that helps to accomplish their mission. 
 
-Screenshots
+## Screenshots ##
 
 ![screenshot](screenshots/home_1.png)
 
