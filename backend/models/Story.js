@@ -2,9 +2,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 var storySchema = new Schema({
-    user: {
-        type: mongoose.Schema.ObjectId,
-        ref: "User",
+    firstName: {
+        type: String,
+    },
+    lastName: {
+        type: String,
     },
     date: {
         type: Date,
@@ -17,6 +19,11 @@ var storySchema = new Schema({
     content: {
         type: String,
         required: true
+    },
+    numberOfLogins: {
+        type: Number,
+        required: true,
+        default: 0
     }
 });
 

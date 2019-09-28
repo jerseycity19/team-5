@@ -9,8 +9,11 @@ router.get("/allStories", (req, res) => {
 
 // This writes a story to the database
 router.post("/writeStory", (req, res) => {
+    let now = Date();
     let newStory = new Story({
-        date: req.body.date,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        date: now,
         location: req.body.location,
         content: req.body.content
     })
