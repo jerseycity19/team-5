@@ -37,7 +37,7 @@ export default function ChatForm () {
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = async () => {
-    await fetch(link, {
+    await fetch(link + '/story', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
