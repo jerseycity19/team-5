@@ -24,8 +24,8 @@ export default function MenuBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>   
+      <AppBar position="static" style={{ backgroundColor: "#60c4b6" }}>
+        <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Application
           </Typography>
