@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import { useState } from 'react';
+import link from '../../link'
 
 const useStyles = makeStyles(theme => ({
     textArea: {
@@ -34,8 +35,27 @@ export default function ChatForm() {
     const [city, setCity] = useState("");
     const [state, setState] = useState("");
 
-    const handleSubmit = event => {
-        console.log(this.firstName);
+
+
+    const handleSubmit = async() => {
+        const response = await fetch(link), {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            firstName,
+            lastName,
+            story,
+            city,
+            state,
+          }),
+        }),
+        const responseJSON = await response.json();
+        console.log(responseJSON);
+        if (responseJSON.success) {
+          setSuccess(true);
+        }
     };
 
     return (
