@@ -12,7 +12,6 @@ class StoryFormView extends React.Component {
         <SimpleMenu/>
         <Carousel class="carousel"/>
         <ChatForm/>
-        <ChatRoomList/>
       </div>
     )
   }

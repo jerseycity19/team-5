@@ -20,7 +20,6 @@ class DesktopView extends React.Component {
                 </div>
                 <Carousel class = "carousel"/>
                 <ChatForm/>
-                <ChatRoomList/>
             </div>
         )
     }
