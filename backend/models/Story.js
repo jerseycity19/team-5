@@ -12,7 +12,11 @@ var storySchema = new Schema({
         type: Date,
         required: true,
     },
-    location: {
+    city: {
+        type: String,
+        required: true,
+    },
+    state: {
         type: String,
         required: true,
     },

@@ -14,7 +14,8 @@ router.post("/writeStory", (req, res) => {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         date: now,
-        location: req.body.location,
+        city: req.body.city,
+        state: req.body.state,
         content: req.body.content
     })
 
