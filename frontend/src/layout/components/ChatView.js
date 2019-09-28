@@ -2,6 +2,15 @@ import { Component } from 'react'
 import openSocket from 'socket.io-client'
 import link from '../../link'
 import React from 'react'
+import SimpleMenu from '../components/MenuBar'
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+import { TextField } from '@material-ui/core';
+import DeleteIcon from '@material-ui/icons/Delete';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+import KeyboardVoiceIcon from '@material-ui/icons/KeyboardVoice';
+import Icon from '@material-ui/core/Icon';
+import SaveIcon from '@material-ui/icons/Save';
 
 export default class ChatView extends Component {
   state = {
@@ -9,8 +18,8 @@ export default class ChatView extends Component {
     inProgressMessage: '',
   }
 
-  constructor (props) {
-    super(props)
+  constructor(props) {
+    super(props);
 
     this.socket = openSocket(link, { withCredentials: false })
     this.socket.on('chat message', (message) => {
@@ -38,15 +47,30 @@ export default class ChatView extends Component {
 
   render = () => (
     <>
-      <ul>
-        {this.state.messages.map(message => (
-          <li key={message}>{message}</li>
-        ))}
-      </ul>
+      <SimpleMenu />
+
+      <div className="chatbox">
+        <ul>
+          {this.state.messages.map(message => (
+            <li key={message}>{message}</li>
+          ))}
+        </ul>
+      </div>
 
       <form onSubmit={this.onFormSubmit}>
-        <input type="text" value={this.state.inProgressMessage} onChange={this.onInProgressMessageChange}/>
-        <input type="submit"/>
+        <TextField
+          id="standard-name"
+          label="Send a message"
+          // className={classes.textField}
+          onChange={this.onInProgressMessageChange}
+          value={this.state.inProgressMessage}
+          margin="normal"
+        />
+        <Button variant="contained" color="primary" onClick={this.onFormSubmit} style={{ marginTop: '28px', marginLeft: '20px' }}>
+          Send
+        {/* This Button uses a Font Icon, see the installation instructions in the docs. */}
+          {/* <Icon className={rightIcon}>send</Icon> */}
+        </Button>
       </form>
     </>
   )

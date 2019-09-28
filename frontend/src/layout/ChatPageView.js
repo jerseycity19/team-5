@@ -8,8 +8,8 @@ export default class ChatPageView extends React.Component {
   render() {
     return (
       <div>
-        <SimpleMenu/>
-        <Container align="center" width="lg"><ChatRoomList/></Container>
+        <SimpleMenu />
+        <Container align="center" width="lg"><ChatRoomList /></Container>
       </div>
     )
   }

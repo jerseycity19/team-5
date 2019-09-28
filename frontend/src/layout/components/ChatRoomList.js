@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function ChatRoomList () {
+export default function ChatRoomList() {
   const classes = useStyles()
   const [open, setOpen] = React.useState(false)
 
@@ -43,8 +43,8 @@ export default function ChatRoomList () {
         className={classes.root}
       >
         <ListItem button onClick={handleClick}>
-          <ListItemText primary="Louisville, Kentucky"/>
-          {open ? <ExpandLess/> : <ExpandMore/>}
+          <ListItemText primary="Louisville, Kentucky" />
+          {open ? <ExpandLess /> : <ExpandMore />}
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
